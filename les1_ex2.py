@@ -1,5 +1,5 @@
-string1 = 'value'
-string2 = 'dollar'
+string1 = input('Строка 1: ')
+string2 = input('Строка 2: ')
 
 
 def string_compare(string1, string2):
@@ -11,4 +11,4 @@ def string_compare(string1, string2):
     elif string1 != string2 and string2 == 'learn':
         return 3
 
-string_compare(string1, string2)
+print(string_compare(string1, string2))
