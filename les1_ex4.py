@@ -47,15 +47,17 @@ def get_answers(question):
     answers = {'какая погода': 'хорошая', 
                'как дела': 'Лучше всех', 
                'любимый цвет': 'синий'}
-    try:
-        return answers.get(question.lower(), ' не знаю')
-    except KeyboardInterrupt:
-        return 'НЕ НАЖИМАЙ ctrl+C!'
+    
+    return answers.get(question.lower(), ' не знаю')
+
 
 def ask_user():
 
     while True:
-        question = input('задай вопрос :')
+        try:
+            question = input('задай вопрос :')
+        except KeyboardInterrupt:
+            print('НЕ НАЖИМАЙ ctrl+C!')
         if question == 'пока':
             print('До встречи!')
             break
