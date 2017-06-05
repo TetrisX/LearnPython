@@ -4,10 +4,10 @@ def get_answers(question):
     'пока': 'увидимся'}
     return answers.get(question.lower(), ' не знаю')
 
+if __name__ == '__main__':
+    print(get_answers(input('Задавай свои вопросики: ')))
 
-print(get_answers('Привет'))
-
-x = 0
-while x < 10:
-    print(x)
-    x += 1
+# x = 0
+# while x < 10:
+#     print(x)
+#     x += 1

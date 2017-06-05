@@ -54,16 +54,15 @@ def get_answers(question):
 def ask_user():
 
     while True:
-        try:
-            question = input('задай вопрос :')
-        except KeyboardInterrupt:
-            print('НЕ НАЖИМАЙ ctrl+C!')
+        question = input('задай вопрос :')
         if question == 'пока':
             print('До встречи!')
             break
         print(get_answers(question))
-
-ask_user()
+try: 
+    ask_user()
+except KeyboardInterrupt:
+    print('НЕ НАЖИМАЙ ctrl+C!')
 
 
 
