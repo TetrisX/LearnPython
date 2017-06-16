@@ -17,7 +17,7 @@ print(dt_month.strftime('%d.%m.%Y'))
 
 # Превратите строку "01/01/17 12:10:03.234567" в объект datetime
 
-strin = '01/01/17'
-date_str = datetime.strptime(strin,'%d/%m/%Y')
+string = '01/01/17'
+date_str = datetime.strptime(string,'%d/%m/%Y')
 
 print(date_str)
